@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div>
+            <h1><a href="#">Піца</a></h1>
+            <p><a>809-693-45-78</a></p>
+            <p>11:00 - 23:00</p>
+        </div>
+        <nav>
+            <ul>
+                 <li>
+                    <a href="#section-food-menu">Меню</a>
+                </li>
+                <li>
+                    <a href="form.html">Замовити</a>
+                </li>
+                <li>
+                    <a href="#section-contact">Контакти</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Слідкуйте за нами</h2>
+            <p>Нові піци та кльові обновлення. Слідкуйте за нами в Instagram, щоб не пропустити жодної дрібниці!</p>
+            <button>Pizza_insta</button>
+            <div>
+                <figure>
+                    <img src="/image/pizza_1.jpg"
+                         alt="Elephant at sunset">
+                    <figcaption>Піца Гавайська</figcaption>
+                </figure>
+                <figure>
+                    <img src="/image/pizza_2.jpg"
+                         alt="Elephant at sunset">
+                    <figcaption>Піца Легенда</figcaption>
+                </figure>
+                <figure>
+                    <img src="/image/pizza_3.jpg"
+                         alt="Elephant at sunset">
+                    <figcaption>Піца Панночка</figcaption>
+                </figure>
+            </div>
+        </section>
+        <section>
+            <h2><img src="/image/pizza-logo.png" alt="Pizza" /></h2>
+            <div>
+              <video controls width="700" height="700" 
+                      loop muted
+                      poster="/image/poster.jpg">
+                  <source src="/image/pizza_intro.mp4" type="video/mp4">
+              </video>
+            </div>
+            <div>
+                <p>Будьте в курсі новин</p>
+                <p>Щоб бути в курсі найсвіжіших новин та акційних пропозицій — підпишіться на емейл-розсилку.</p>
+                <input type="text" name="email" placeholder="Електроння скринька">
+                 <button type="submit">Підписатися</button>
+             </div>
+        </section>
+        <section id="section-contact">
+            <h2>Залиште свої контакти</h2>
+             <p>Ми Вам передзвонимо!</p>
+            <form method="POST" action="https://formspree.io/romann.kravets@gmail.com">
+                <label>Ім'я:
+                    <input type="text" name="name"/>
+                </label>
+                <br>
+                <label>Телефон:
+                    <input type="text" name="phone"/>
+                </label>
+                <br>
+                <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night...
+                    </textarea>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img src="/image/pizza-logo.png" alt="Pizza" />
+            <p>Італійська, швидка, для тебе</p>
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="">Про нас</a>
+                </li>
+                 <li>
+                    <a href="">Доставка</a>
+                </li>
+                <li>
+                    <a href="">Оферта</a>
+                </li>
+            </ul>
+        </nav>
+        <div>
+            <p>&#9400; 2019 Pizza </p>
+            <p>Розроблено <a href="#">Pizza</a></p>
+        </div>
+    </footer>
+</body>
+</html>
