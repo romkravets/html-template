@@ -7,30 +7,34 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div>
             <h1><a href="#">Піца</a></h1>
             <p><a>809-693-45-78</a></p>
             <p>11:00 - 23:00</p>
+            <form class="search-form" action="https://formspree.io/romann.kravets@gmail.com">
+              <input class="search-form__input" type="text" placeholder="Знайти..." name="search">
+              <button class="search-form__button" type="submit">Все вдасться</button>
+            </form>
         </div>
-        <nav>
-            <ul>
-                 <li>
-                    <a href="#section-food-menu">Меню</a>
+        <nav class="navigation">
+            <ul class="navigation__items">
+                 <li class="navigation__item">
+                    <a class="navigation__link" href="#">Меню</a>
                 </li>
-                <li>
-                    <a href="form.html">Замовити</a>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="form.html">Замовити</a>
                 </li>
-                <li>
-                    <a href="#section-contact">Контакти</a>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="#section-contact">Контакти</a>
                 </li>
             </ul>
         </nav>
     </header>
     
-    <main>
-        <section>
-            <h2>Слідкуйте за нами</h2>
+    <main class="main">
+        <section class="section">
+            <h2 class="section__title">Слідкуйте за нами</h2>
             <p>Нові піци та кльові обновлення. Слідкуйте за нами в Instagram, щоб не пропустити жодної дрібниці!</p>
             <button>Pizza_insta</button>
             <div>
@@ -51,7 +55,7 @@
                 </figure>
             </div>
         </section>
-        <section>
+        <section class="section">
             <h2><img src="/image/pizza-logo.png" alt="Pizza" /></h2>
             <div>
               <video controls width="700" height="700" 
@@ -67,43 +71,43 @@
                  <button type="submit">Підписатися</button>
              </div>
         </section>
-        <section id="section-contact">
-            <h2>Залиште свої контакти</h2>
+        <section class="section" id="section-contact">
+            <h2  class="section__title">Залиште свої контакти</h2>
              <p>Ми Вам передзвонимо!</p>
             <form method="POST" action="https://formspree.io/romann.kravets@gmail.com">
                 <label>Ім'я:
-                    <input type="text" name="name"/>
+                    <input type="text" name="name" placeholder="Ім'я"/>
                 </label>
                 <br>
                 <label>Телефон:
-                    <input type="text" name="phone"/>
+                    <input type="text" name="phone" placeholder="Телефон"/>
                 </label>
                 <br>
-                <textarea id="story" name="story" rows="5" cols="33">It was a dark and stormy night...
-                    </textarea>
+                <textarea id="story" name="story" rows="5" cols="33" placeholder="Відгук">
+                </textarea>
             </form>
         </section>
     </main>
-    <footer>
-        <div>
+    <footer class="footer">
+        <div class="footer__caption">
             <img src="/image/pizza-logo.png" alt="Pizza" />
             <p>Італійська, швидка, для тебе</p>
         </div>
-        <nav>
-            <ul>
-                <li>
-                    <a href="">Про нас</a>
+        <nav class="navigation">
+            <ul class="navigation__items">
+                <li class="navigation__item">
+                    <a class="navigation__link" href="">Про нас</a>
                 </li>
-                 <li>
-                    <a href="">Доставка</a>
+                 <li class="navigation__item">
+                    <a class="navigation__link" href="">Доставка</a>
                 </li>
-                <li>
-                    <a href="">Оферта</a>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="">Оферта</a>
                 </li>
             </ul>
         </nav>
-        <div>
-            <p>&#9400; 2019 Pizza </p>
+        <div class="contentinfo">
+            <p class="">&#9400; 2019 Pizza </p>
             <p>Розроблено <a href="#">Pizza</a></p>
         </div>
     </footer>

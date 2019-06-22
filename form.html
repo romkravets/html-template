@@ -4,15 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Замовлення</title>
 </head>
 <body>
-    <hrader>
-        <nav>
-            <ul>
-                <li><a href="index.html">Головна</a></li>
+    <header>
+        <nav class="navigation">
+            <ul class="navigation__items">
+                <li class="navigation__item">
+                    <a class="navigation__link"href="index.html">Головна</a>
+                </li>
             </ul>
         </nav>
-    </hrader>
+    </header>
+    <main>
+        <h2></h2>
+        <form class="form">
+            <div class="form__item">
+                <label>Ім'я:
+                <input type="text" name="name" placeholder="Ім'я" required/>
+            </label>
+            </div>
+            <div class="form__item">
+              <label>Прізвище:
+                <input type="text" name="second_name" placeholder="Прізвище" required/>
+               </label>
+            </div>
+            
+            <input type="submit" value="Submit"/>
+        </form>
+    </main>
 </body>
 </html>
