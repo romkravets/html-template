@@ -1,37 +1,133 @@
 <!DOCTYPE html>
 <html lang="uk">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Замовлення</title>
 </head>
+
 <body>
     <header>
         <nav class="navigation">
             <ul class="navigation__items">
                 <li class="navigation__item">
-                    <a class="navigation__link"href="index.html">Головна</a>
+                    <a class="navigation__link" href="index.html">Головна</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html">Меню</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="index.html">Контакти</a>
                 </li>
             </ul>
         </nav>
     </header>
     <main>
-        <h2></h2>
-        <form class="form">
-            <div class="form__item">
-                <label>Ім'я:
-                <input type="text" name="name" placeholder="Ім'я" required/>
-            </label>
-            </div>
-            <div class="form__item">
-              <label>Прізвище:
-                <input type="text" name="second_name" placeholder="Прізвище" required/>
-               </label>
-            </div>
-            
-            <input type="submit" value="Submit"/>
+        <form class="form" method="POST" action="https://formspree.io/romann.kravets@gmail.com">
+            <h1>Форма замовлення смачної піци</h1>
+            <p>Широкий вибір страв та напоїв.</p>
+            <p>Смачно, вишукано та неповторно!</p>
+            <p>Обов'язкові поля познаені *</p>
+            <section class="form__contact">
+                <h2>Замовник</h2>
+                <div class="form__item">
+                    <label>Ім'я:
+                        <strong><abbr title="required">*</abbr></strong>
+                        <input type="text" name="name" placeholder="Ім'я" required/>
+                    </label>
+                </div>
+                <div class="form__item">
+                    <label>Прізвище:
+                       <strong><abbr title="required">*</abbr></strong>
+                       <input type="text" name="second_name" placeholder="Прізвище" required/>
+                    </label>
+                </div>
+                <div class="form__item">
+                    <label>Телефон:
+                        <strong><abbr title="required">*</abbr></strong>
+                        <input type="text" name="phone" placeholder="Телефон" required/>
+                     </label>
+                </div>
+                <div class="form__item">
+                    <label>Вулиця:
+                         <strong><abbr title="required">*</abbr></strong>
+                         <input type="text" name="street" placeholder="Вулиця" required/>
+                     </label>
+                </div>
+                <div class="form__item">
+                    <label>Будинок:
+                         <strong><abbr title="required">*</abbr></strong>
+                         <input type="number" name="house" placeholder="Будинок" required/>
+                     </label>
+                </div>
+            </section>
+            <section class="form__goods">
+                <h2>Вибір смачненького</h2>
+                <div>
+                    <label>Вид піци:
+                        <strong><abbr title="required">*</abbr></strong>
+                          <select name="pizzaoption">
+                            <option value="none">...</option>
+                            <option value="choza">Капричоза</option>
+                            <option value="argent">Аргентина</option>
+                            <option value="flamingo">Фламінго</option>
+                          </select>
+                    </label>
+                </div>
+                <div>
+                    <label>Розміри:</label>
+                        <strong><abbr title="required">*</abbr></strong>
+                        <input type="radio" name="30" value="30"/>
+                        <label>&#8960;30</label>
+                        <input type="radio" name="60" value="60"/>
+                        <label>&#8960;60</label>
+                        <input type="radio" name="90" value="90"/>
+                        <label>&#8960;90</label>
+                </div>
+                <div>
+                    <label>Додаткові складники:
+                        <strong><abbr title="required">*</abbr></strong>
+                          <select name="pizzaoption">
+                            <option value="none">...</option>
+                            <option value="pepper">Перчик</option>
+                            <option value="salt">Сіль</option>
+                            <option value="turmeric">Куркума</option>
+                          </select>
+                    </label>
+                </div>
+            </section>
+            <section class="form__payment">
+                <h2>Інформація про оплату</h2>
+                <div>
+                    <label>Тип карти:
+                        <strong><abbr title="required">*</abbr></strong>
+                         <select id="card" name="usercard">
+                            <option value="none">...</option>
+                            <option value="visa">Visa</option>
+                            <option value="mc">Mastercard</option>
+                            <option value="amex">American Express</option>
+                          </select>
+                    </label>
+                </div>
+                <div>
+                    <label>Номер карти:
+                    <strong><abbr title="required">*</abbr></strong>
+                        <input type="number" name="cardnumber"/>
+                    </label>
+                </div>
+                <div>
+                    <label>Термін карти:
+                    <strong><abbr title="required">*</abbr></strong>
+                        <input type="date" name="expiration"/>
+                    </label>
+                </div>
+            </section>
+            <input type="submit" value="Смачного!" />
+             <input type="reset" value="Ще раз" />
         </form>
     </main>
 </body>
+
 </html>

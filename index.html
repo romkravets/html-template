@@ -1,29 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
+
 <body>
     <header class="header">
         <div>
-            <h1><a href="#">Піца</a></h1>
+            <a href="#">
+                <img src="/image/pizza-logo.png" alt="Pizza"/>
+                <h1>Піца</h1>
+            </a>
+            
             <p><a>809-693-45-78</a></p>
             <p>11:00 - 23:00</p>
-            <form class="search-form" action="https://formspree.io/romann.kravets@gmail.com">
-              <input class="search-form__input" type="text" placeholder="Знайти..." name="search">
-              <button class="search-form__button" type="submit">Все вдасться</button>
+            <form class="search-form">
+                <input class="search-form__input" type="text" placeholder="Знайти..." name="search">
+                <button class="search-form__button" type="submit">Все вдасться</button>
             </form>
         </div>
         <nav class="navigation">
             <ul class="navigation__items">
-                 <li class="navigation__item">
+                <li class="navigation__item">
                     <a class="navigation__link" href="#">Меню</a>
                 </li>
                 <li class="navigation__item">
-                    <a class="navigation__link" href="form.html">Замовити</a>
+                    <a class="navigation__link" href="form.html">Замовити піцу</a>
                 </li>
                 <li class="navigation__item">
                     <a class="navigation__link" href="#section-contact">Контакти</a>
@@ -31,36 +37,31 @@
             </ul>
         </nav>
     </header>
-    
+
     <main class="main">
         <section class="section">
             <h2 class="section__title">Слідкуйте за нами</h2>
             <p>Нові піци та кльові обновлення. Слідкуйте за нами в Instagram, щоб не пропустити жодної дрібниці!</p>
             <button>Pizza_insta</button>
-            <div>
+            <div class="section__grid">
                 <figure>
-                    <img src="/image/pizza_1.jpg"
-                         alt="Elephant at sunset">
+                    <img src="/image/pizza_1.jpg" alt="Elephant at sunset">
                     <figcaption>Піца Гавайська</figcaption>
                 </figure>
                 <figure>
-                    <img src="/image/pizza_2.jpg"
-                         alt="Elephant at sunset">
+                    <img src="/image/pizza_2.jpg" alt="Elephant at sunset">
                     <figcaption>Піца Легенда</figcaption>
                 </figure>
                 <figure>
-                    <img src="/image/pizza_3.jpg"
-                         alt="Elephant at sunset">
+                    <img src="/image/pizza_3.jpg" alt="Elephant at sunset">
                     <figcaption>Піца Панночка</figcaption>
                 </figure>
             </div>
         </section>
         <section class="section">
-            <h2><img src="/image/pizza-logo.png" alt="Pizza" /></h2>
+            <h2 class="section__title">Майстер клас</h2>
             <div>
-              <video controls width="700" height="700" 
-                      loop muted
-                      poster="/image/poster.jpg">
+                <video controls width="500" height="285" loop muted poster="/image/poster.jpg">
                   <source src="/image/pizza_intro.mp4" type="video/mp4">
               </video>
             </div>
@@ -68,12 +69,12 @@
                 <p>Будьте в курсі новин</p>
                 <p>Щоб бути в курсі найсвіжіших новин та акційних пропозицій — підпишіться на емейл-розсилку.</p>
                 <input type="text" name="email" placeholder="Електроння скринька">
-                 <button type="submit">Підписатися</button>
-             </div>
+                <button type="submit">Підписатися</button>
+            </div>
         </section>
         <section class="section" id="section-contact">
-            <h2  class="section__title">Залиште свої контакти</h2>
-             <p>Ми Вам передзвонимо!</p>
+            <h2 class="section__title">Залиште свої контакти</h2>
+            <p>Ми Вам передзвонимо!</p>
             <form method="POST" action="https://formspree.io/romann.kravets@gmail.com">
                 <label>Ім'я:
                     <input type="text" name="name" placeholder="Ім'я"/>
@@ -83,9 +84,16 @@
                     <input type="text" name="phone" placeholder="Телефон"/>
                 </label>
                 <br>
-                <textarea id="story" name="story" rows="5" cols="33" placeholder="Відгук">
-                </textarea>
+                <label>Повідомлення:
+                    <textarea
+                               name="message" 
+                               rows="5" 
+                               cols="33" 
+                               placeholder="Відгук">
+                    </textarea>
+                </label>
             </form>
+            <a href="form.html">Замовити піцу</a>
         </section>
     </main>
     <footer class="footer">
@@ -98,11 +106,14 @@
                 <li class="navigation__item">
                     <a class="navigation__link" href="">Про нас</a>
                 </li>
-                 <li class="navigation__item">
+                <li class="navigation__item">
                     <a class="navigation__link" href="">Доставка</a>
                 </li>
                 <li class="navigation__item">
                     <a class="navigation__link" href="">Оферта</a>
+                </li>
+                <li class="navigation__item">
+                    <a class="navigation__link" href="form.html">Замовити піцу</a>
                 </li>
             </ul>
         </nav>
@@ -112,4 +123,5 @@
         </div>
     </footer>
 </body>
+
 </html>
