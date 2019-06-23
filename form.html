@@ -50,7 +50,7 @@
                 <div class="form__item">
                     <label>Телефон:
                         <strong><abbr title="required">*</abbr></strong>
-                        <input type="text" name="phone" placeholder="Телефон" required/>
+                        <input type="tel" name="phone" placeholder="Телефон" required/>
                      </label>
                 </div>
                 <div class="form__item">
@@ -72,7 +72,7 @@
                     <label>Вид піци:
                         <strong><abbr title="required">*</abbr></strong>
                           <select name="pizzaoption">
-                            <option value="none">...</option>
+                            <option value="none">Вибір...</option>
                             <option value="choza">Капричоза</option>
                             <option value="argent">Аргентина</option>
                             <option value="flamingo">Фламінго</option>
@@ -98,7 +98,7 @@
                     <label>Додаткові складники:
                         <strong><abbr title="required">*</abbr></strong>
                           <select name="pizzaoption">
-                            <option value="none">...</option>
+                            <option value="none">Вибір...</option>
                             <option value="pepper">Перчик</option>
                             <option value="salt">Сіль</option>
                             <option value="turmeric">Куркума</option>
@@ -112,7 +112,7 @@
                     <label>Тип карти:
                         <strong><abbr title="required">*</abbr></strong>
                          <select id="card" name="usercard">
-                            <option value="none">...</option>
+                            <option value="none">Вибір...</option>
                             <option value="visa">Visa</option>
                             <option value="mc">Mastercard</option>
                             <option value="amex">American Express</option>
@@ -122,13 +122,13 @@
                 <div>
                     <label>Номер карти:
                     <strong><abbr title="required">*</abbr></strong>
-                        <input type="number" name="cardnumber"/>
+                        <input type="number" name="cardnumber" maxlength="19" placeholder=""/>
                     </label>
                 </div>
                 <div>
                     <label>Термін карти:
                     <strong><abbr title="required">*</abbr></strong>
-                        <input type="date" name="expiration"/>
+                        <input type="text" name="expiration" placeholder="MM/YY"/>
                     </label>
                 </div>
             </section>
