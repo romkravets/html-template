@@ -30,7 +30,6 @@
     <main>
         <form class="form" method="POST" action="https://formspree.io/romann.kravets@gmail.com">
             <h1>Форма замовлення смачної піци</h1>
-            <p>Широкий вибір страв та напоїв.</p>
             <p>Смачно, вишукано та неповторно!</p>
             <p>Обов'язкові поля познаені *</p>
             <section class="form__contact">
@@ -71,11 +70,12 @@
                 <div>
                     <label>Вид піци:
                         <strong><abbr title="required">*</abbr></strong>
-                          <select name="pizzaoption">
-                            <option value="none">Вибір...</option>
-                            <option value="choza">Капричоза</option>
-                            <option value="argent">Аргентина</option>
-                            <option value="flamingo">Фламінго</option>
+                          <select name="pizzaoption" required>
+                                <option value="" disabled selected>Виберіть піцу...</option>
+                                <option value="amer">Американа</option>
+                                <option value="choza">Капричоза</option>
+                                <option value="argent">Аргентина</option>
+                                <option value="flamingo">Фламінго</option>
                           </select>
                     </label>
                 </div>
@@ -83,13 +83,13 @@
                     <label>Розміри:</label>
                         <strong><abbr title="required">*</abbr></strong>
                         <label>
-                            <input type="radio" name="30" value="30">&#8960;30
+                            <input type="radio" name="gender" value="30" required>&#8960;30
                         </label>
                         <label>
-                            <input type="radio" name="60" value="60">&#8960;60
+                            <input type="radio" name="gender" value="60">&#8960;60
                         </label>
                         <label>
-                            <input type="radio" name="90" value="90">&#8960;90
+                            <input type="radio" name="gender" value="90">&#8960;90
                         </label>
                         
                         
@@ -97,8 +97,9 @@
                 <div>
                     <label>Додаткові складники:
                         <strong><abbr title="required">*</abbr></strong>
-                          <select name="pizzaoption">
-                            <option value="none">Вибір...</option>
+                          <select name="pizzaoption" required>
+                            <option value="" disabled selected>Виберіть складники...</option>
+                            <option value="sausage">Ковбачка</option>
                             <option value="pepper">Перчик</option>
                             <option value="salt">Сіль</option>
                             <option value="turmeric">Куркума</option>
@@ -111,8 +112,8 @@
                 <div>
                     <label>Тип карти:
                         <strong><abbr title="required">*</abbr></strong>
-                         <select id="card" name="usercard">
-                            <option value="none">Вибір...</option>
+                         <select id="card" name="usercard" required>
+                            <option value="" disabled selected>Виберіть тик карти...</option>
                             <option value="visa">Visa</option>
                             <option value="mc">Mastercard</option>
                             <option value="amex">American Express</option>
@@ -122,18 +123,18 @@
                 <div>
                     <label>Номер карти:
                     <strong><abbr title="required">*</abbr></strong>
-                        <input type="number" name="cardnumber" maxlength="19" placeholder=""/>
+                        <input type="number" name="cardnumber" maxlength="19" placeholder="Карта номер" required/>
                     </label>
                 </div>
                 <div>
                     <label>Термін карти:
                     <strong><abbr title="required">*</abbr></strong>
-                        <input type="text" name="expiration" placeholder="MM/YY"/>
+                        <input type="text" name="expiration" placeholder="MM/YY" required/>
                     </label>
                 </div>
             </section>
             <input type="submit" value="Смачного!" />
-             <input type="reset" value="Ще раз" />
+            <input type="reset" value="Ще раз" />
         </form>
     </main>
 </body>
